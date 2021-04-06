@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 50px auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 50px auto;
+  background-color: grey;
+}
+
+table tr td {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(53, 49, 49);
+  font-size: 100px;
+  text-align: center;
+}
+table tr td:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+.clickedX {
+  color: red;
+}
+.clickedO {
+  color: green;
+}
