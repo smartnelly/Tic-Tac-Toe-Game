@@ -38,7 +38,7 @@ $(document).ready(function () {
             alert("O Wins!!") ? "" : location.reload();
           }, 100);
         }
-      } else if (winner === -1 && str.length === 8) {
+      } else if (winner === -1 && str.length === 9) {
         setTimeout(function () {
           // No ONE wins
           alert("It's a DRAW!!") ? "" : location.reload();
