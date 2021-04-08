@@ -5,11 +5,11 @@ $(document).ready(function () {
       // empty box
       if (round % 2 == 1) {
         // 1st 3rd 5th 7th 9th play
-        $(this).append("X");
+        $(this).append("🐱");
         $(this).addClass("clickedX");
       } else {
         // 2nd 4th 6th 8th play
-        $(this).append("O");
+        $(this).append("🐶");
         $(this).addClass("clickedO");
       }
 
@@ -27,15 +27,15 @@ $(document).ready(function () {
 
       const winner = findWinner();
       if (winner !== -1) {
-        if (winner === "X") {
+        if (winner === "🐱") {
           setTimeout(function () {
             // X win
-            alert("X Wins!!") ? "" : location.reload();
+            alert("🐱 Wins!!") ? "" : location.reload();
           }, 100);
-        } else if (winner === "O") {
+        } else if (winner === "🐶s") {
           setTimeout(function () {
             // O win
-            alert("O Wins!!") ? "" : location.reload();
+            alert("🐶 Wins!!") ? "" : location.reload();
           }, 100);
         }
       } else if (winner === -1 && str.length === 9) {

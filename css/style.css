@@ -62,12 +62,3 @@ table tr td:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-
-.clickedX {
-  color: rgb(71, 70, 70);
-  font-family: "Raleway", sans-serif;
-}
-.clickedO {
-  color: rgb(252, 219, 28);
-  font-family: "Raleway", sans-serif;
-}
