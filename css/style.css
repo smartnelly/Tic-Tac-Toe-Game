@@ -29,7 +29,7 @@ table tr td {
   width: 150px;
   height: 150px;
   border: 15px solid rgb(71, 70, 70);
-  font-size: 120px;
+  font-size: 100px;
   text-align: center;
 }
 
@@ -62,3 +62,20 @@ table tr td:hover {
   opacity: 0.6;
   cursor: pointer;
 }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.blink{
+    color: #dd4814;
+    animation: blink 1s linear infinite; 
