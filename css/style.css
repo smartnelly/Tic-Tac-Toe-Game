@@ -3,33 +3,71 @@
   padding: 0;
 }
 
-header {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+body {
+  position: relative;
+  background-image: url(bgi.gif);
+  background-size: cover;
+  background-size: 400px 300px;
+}
+
+header img {
+  display: block;
   margin: 50px auto;
+  width: 30%;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 50px auto;
-  background-color: grey;
+  margin: 0 auto;
+  background-color: #19b0e3;
 }
 
 table tr td {
   width: 150px;
   height: 150px;
-  border: 2px solid rgb(53, 49, 49);
-  font-size: 100px;
+  border: 15px solid rgb(71, 70, 70);
+  font-size: 120px;
   text-align: center;
 }
+
+#b1,
+#b2,
+#b3 {
+  border-top: none;
+}
+
+#b7,
+#b8,
+#b9 {
+  border-bottom: none;
+}
+
+#b1,
+#b4,
+#b7 {
+  border-left: none;
+}
+
+#b3,
+#b6,
+#b9 {
+  border-right: none;
+}
+
 table tr td:hover {
-  background-color: wheat;
+  background-color: rgb(204, 214, 248);
+  opacity: 0.6;
   cursor: pointer;
 }
 
 .clickedX {
-  color: red;
+  color: rgb(71, 70, 70);
+  font-family: "Raleway", sans-serif;
 }
 .clickedO {
-  color: green;
+  color: rgb(252, 219, 28);
+  font-family: "Raleway", sans-serif;
 }
