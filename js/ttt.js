@@ -6,11 +6,9 @@ $(document).ready(function () {
       if (round % 2 == 1) {
         // 1st 3rd 5th 7th 9th play
         $(this).append("🐱");
-        $(this).addClass("clickedX");
       } else {
         // 2nd 4th 6th 8th play
         $(this).append("🐶");
-        $(this).addClass("clickedO");
       }
 
       round++;
@@ -26,23 +24,25 @@ $(document).ready(function () {
       });
 
       const winner = findWinner();
-      if (winner !== -1) {
+      if (winner !== false) {
+        // cat win
         if (winner === "🐱") {
+          $("<td>🐱</td>").replaceAll("td");
           setTimeout(function () {
-            // X win
             alert("🐱 Wins!!") ? "" : location.reload();
-          }, 100);
-        } else if (winner === "🐶s") {
+          }, 500);
+          // dog win
+        } else if (winner === "🐶") {
+          $("<td>🐶</td>").replaceAll("td");
           setTimeout(function () {
-            // O win
             alert("🐶 Wins!!") ? "" : location.reload();
-          }, 100);
-        }
-      } else if (winner === -1 && str.length === 9) {
+          }, 500);
+        } // No ONE wins
+      } else if (winner === false && str.length === 18) {
+        $("<td>💩</td>").replaceAll("td");
         setTimeout(function () {
-          // No ONE wins
           alert("It's a DRAW!!") ? "" : location.reload();
-        }, 100);
+        }, 500);
       }
     }
   });
@@ -87,5 +87,5 @@ const findWinner = function () {
     return box7;
     //not win + not complete game
   }
-  return -1;
+  return false;
 };
