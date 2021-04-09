@@ -30,21 +30,21 @@ $(document).ready(function () {
           $("<td>🐱</td>").replaceAll("td");
           $("td").addClass("blink");
           setTimeout(function () {
-            alert("🐱 Wins!!") ? "" : location.reload();
+            alert("🐱 Wins!!🐱") ? "" : location.reload();
           }, 500);
           // dog win
         } else if (winner === "🐶") {
           $("<td>🐶</td>").replaceAll("td");
           $("td").addClass("blink");
           setTimeout(function () {
-            alert("🐶 Wins!!") ? "" : location.reload();
+            alert("🐶 Wins!!🐶") ? "" : location.reload();
           }, 500);
         } // No ONE wins
       } else if (winner === false && str.length === 18) {
         $("<td>💩</td>").replaceAll("td");
         $("td").addClass("blink");
         setTimeout(function () {
-          alert("It's a DRAW!!") ? "" : location.reload();
+          alert("💩DRAW!!💩") ? "" : location.reload();
         }, 500);
       }
     }
