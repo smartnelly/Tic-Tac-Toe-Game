@@ -1,4 +1,4 @@
-## **Tic Tac Toe**
+## **[Tic Tac Toe](https://smartnelly.github.io/Tic-Tac-Toe-Game/)**
 
 - **Render the game board in the browser**
 - **Switch turns** between 🐱 and 🐶
