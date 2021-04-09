@@ -22,4 +22,4 @@
 
 ---
 
-- PLAY [HERE](https://smartnelly.github.io/Tic-Tac-Toe-Game/)
+# PLAY [HERE](https://smartnelly.github.io/Tic-Tac-Toe-Game/)
