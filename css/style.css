@@ -74,6 +74,7 @@ table tr td:hover {
     opacity: 0;
   }
 }
-.blink{
-    color: #dd4814;
-    animation: blink 1s linear infinite; 
+.blink {
+  color: #dd4814;
+  animation: blink 1s linear infinite;
+}
