@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
-
 body {
   position: relative;
   background-image: url(bgi.gif);
@@ -62,7 +60,7 @@ table tr td:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-@-webkit-keyframes blink {
+@keyframes blink {
   0% {
     opacity: 1;
   }
